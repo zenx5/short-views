@@ -1,0 +1,140 @@
+body{
+    background: linear-gradient(#1985A1, white);
+    height:100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.outer-layer{
+    border: 1px solid #4C5C68;
+    border-radius: 15px;
+    padding: 2px;
+    box-shadow: 1px 1px 5px black;
+    background-color: #46494C;
+    
+}
+.inner-layer{
+    border: 1px solid #4C5C68;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 1px 1px 15px black;
+    padding: 5px 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+
+}
+.top-element{
+    display: grid;
+    grid-template-columns: 1.2fr 0.6fr 1.2fr; 
+
+}
+
+.receiver{
+    margin-left: auto;
+    margin-right: auto;
+    grid-column-start: 2;
+    background-color: black;
+    width: 45px;
+    height: 10px;
+    border-radius: 15px;
+    border: 2px solid #4C5C68;
+}
+.camera{
+    
+    background-color: black;
+    width: 10px;
+    border: 2px solid #4C5C68;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inner-camera{
+    background-color:#08233d;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+.screen{
+    height: 300px;
+    width: 170px;
+    border: 1px double #0a2d36;
+    background-color: #04192b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 2px;
+    color: white;
+}
+
+.button-element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-button{
+    background-color: black;
+    width: 20px;
+    border: 2px solid #4C5C68;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    color: white;
+}
+
+.inner-circle-button{
+    background-color:#4C5C68;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+button{
+    background-color: #1985A1;
+    border-radius: 8px;
+    padding: 2px 0px;
+    min-width: 70px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border:none;
+}
+button:hover{
+    background-color:#1f7c94;
+    box-shadow: 0px 0px 3px #1985A1;
+}
+button:active{
+    background-color: #0a2d36;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+input{
+    background-color: #08233d;
+    border: 1px solid #1985A1;
+    border-radius: 8px;
+    padding: 5px;
+    outline-style: none;
+    color: white; 
+
+}
+
+.borde-guia{
+    background-color: rebeccapurple;
+}
+
+
