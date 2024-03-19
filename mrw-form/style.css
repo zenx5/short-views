@@ -1,0 +1,38 @@
+button{
+    position: relative;
+    display: flex;
+}
+button::before{
+    content: "";
+    width: 111%;
+    height: 50%;
+    background-color: black;
+    display: inline-flex;
+    position: absolute;
+    top:0.5px;
+    left: -145px;
+    background-color: #FF161F;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+    z-index: 1;
+    transition: 0.9s;
+}
+button:hover::before{
+    left: -1px;
+}
+button::after{
+    content: "";
+    width: 111%;
+    height: 50%;
+    background-color: black;
+    display: inline-flex;
+    position: absolute;
+    bottom: -0.5px;
+    left: -145px;
+    background-color: #FF161F;
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+    z-index: 1;
+    transition: 0.9s;
+}
+button:hover::after{
+    left: -1px;
+}

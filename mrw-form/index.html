@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>MRW</title>
+</head>
+<body class="bg-[#EAF5FB] flex justify-center items-center h-screen ">
+
+    <form class="w-[418px] bg-white flex flex-col gap-6 px-14 py-8 rounded-lg text-[12px] font-semibold">
+        <span class="text-[#FF161F] text-2xl font-bold mx-auto">
+            Calcula tu envío
+        </span>
+        <label class="flex flex-col">
+            <span>
+                Tipo Encomienda
+            </span>
+            <select class="p-2 border border-black rounded">
+                <option value="" disabled>
+                    Selecione una
+                </option>
+                <option value="">
+                    Sobre
+                </option>
+                <option value="">
+                    Paquete
+                </option>
+            </select>
+        </label>
+        <label class="flex flex-col">
+            <span>
+                Tipo Retiro
+            </span>
+            <select class="p-2 border border-black rounded">
+                <option value="" disabled>
+                    Selecione una
+                </option>
+                <option value="">
+                    Retiro en Oficina
+                </option>
+                <option value="">
+                    Retiro a Domiciolio
+                </option>
+            </select>
+        </label>
+        <label class="flex flex-col">
+            <span>
+                Medidas<span class="text-[#FF161F]">*</span>
+            </span>
+            <div class="flex justify-between">
+                <input  type="number" placeholder="Alto" class="border border-black w-[70px] p-2 rounded">
+                <input type="number" placeholder="Ancho" class="border border-black w-[70px] p-2 rounded">
+                <input type="number" placeholder="Largo" class="border border-black w-[70px] p-2 rounded">
+                <input type="number" placeholder="Peso" class="border border-black w-[70px] p-2 rounded">          
+            </div>
+            <p><span class="text-[#FF161F]">*</span>Las medidas siempre deben ser expresadas en cm y el peso en kg</p>
+        </label>
+        <button class="border border-[#FF161F] text-[#FF161F] w-fit px-8 py-2 rounded-lg mx-auto hover:text-white overflow-hidden">
+            <span class="z-10 ">
+                PRESUPUESTO
+            </span>
+        </button>
+    </form>
+    
+</body>
+</html>
