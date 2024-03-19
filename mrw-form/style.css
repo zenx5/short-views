@@ -5,11 +5,11 @@ button{
 button::before{
     content: "";
     width: 111%;
-    height: 50%;
+    height: 51%;
     background-color: black;
     display: inline-flex;
     position: absolute;
-    top:0.5px;
+    top:0px;
     left: -145px;
     background-color: #FF161F;
     clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
@@ -22,7 +22,7 @@ button:hover::before{
 button::after{
     content: "";
     width: 111%;
-    height: 50%;
+    height: 51%;
     background-color: black;
     display: inline-flex;
     position: absolute;
