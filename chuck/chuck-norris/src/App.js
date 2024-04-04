@@ -3,26 +3,30 @@ import chuckImg from './asset/chuck-norris.png'
 import { useState, useEffect} from 'react'
 
 function App() {
-  const [cite,setCite]=useState('')
+  const [cites,setCites]=useState('')
 
-  const handleClick=()=>{
-    const url='https://api.chucknorris.io/jokes/random'
-    const petition=fetch(url)
-    petition.then(response=>response.json())
-    .then(data=>setCite(data.value))
-    .catch(console.log)
-
+  const getData = async () => {
+    const response = await fetch('https://api.chucknorris.io/jokes/random')
+    const data = await response.json()
+    if( data ) setCites(data.value)
   }
+  
   useEffect(()=>{
-    handleClick()
+    getData()
   },[])
+
+  
+  const handleClick = () => {
+    getData()
+  }
+  
   return (
     <>
       <div className="container-img">
         <img src={chuckImg} alt="imagen de chuck norris"/>
       </div>
       <section className="container">
-        <cite>{cite}</cite>
+        <cite>{cites}</cite>
           <button onClick={handleClick}>Next</button>
       </section>      
     </>
